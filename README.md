@@ -3,11 +3,18 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: The technique to solve naked twins can reduce the complexity of the puzzle.
+   We can treat naked twins as a strategy just like eliminate or only choice.
+   I think the best place to use naked twins is the `reduce_puzzle()` function.
+   So that we can repeatedly enforce the constraints on the board to reduce the search space.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: One the two main diagonals, the numbers 1 to 9 should all apear exactly once.
+   The same rule applied on the units as well.
+   We can handle two main diagonals as additional units.
+   By add two diagonals into definition of units,
+   we can introduce the diagonal constraints to our solution without any other changes.
 
 ### Install
 
